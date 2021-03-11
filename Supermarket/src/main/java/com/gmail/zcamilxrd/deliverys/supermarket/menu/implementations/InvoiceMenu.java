@@ -44,10 +44,7 @@ public class InvoiceMenu implements IMenu {
 
         prices.add(multiply.addMultiply(price, quantity));
 
-        int setPrice = 0;
-        for (int integer : prices) {
-            setPrice += integer;
-        }
+        int setPrice = prices.stream().mapToInt(integer -> integer).sum();
 
         Arrays.asList("", "Do you want to return to the main menu?", "").forEach(System.out::println);
 
