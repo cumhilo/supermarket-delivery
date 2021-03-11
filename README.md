@@ -1,4 +1,4 @@
-# Supermarket-Delivery
+# supermarket-delivery
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7f370b5f11b4b0dba1817c1908cb5fe)](https://app.codacy.com/gh/vCamilx/Supermarket-Delivery?utm_source=github.com&utm_medium=referral&utm_content=vCamilx/Supermarket-Delivery&utm_campaign=Badge_Grade_Settings)
 
@@ -32,4 +32,4 @@ or object creation.
 [![visitors](https://img.shields.io/github/watchers/vcamilx/supermarket-delivery?style=social)](https://vcamilx.github.io/)
 [![stars](https://img.shields.io/github/stars/vcamilx/supermarket-delivery?style=social)](https://vcamilx.github.io/)
 
-<h3>*Project created by vCamilo ✨ | 2021 Akardoo DevCamp*<h3> 
+<h3><i>Project created by vCamilo ✨ | 2021 Akardoo DevCamp<i/><h3> 
