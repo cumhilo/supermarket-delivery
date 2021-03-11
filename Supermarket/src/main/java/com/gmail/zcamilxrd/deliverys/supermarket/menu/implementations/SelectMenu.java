@@ -19,6 +19,7 @@ public class SelectMenu implements IMenu {
                 "",
                 "1. Open the menu to create an invoice",
                 "2. Open the help menu",
+                "3. Exit menu",
                 ""
         ).forEach(System.out::println);
 
@@ -31,6 +32,9 @@ public class SelectMenu implements IMenu {
                 break;
             case 2:
                 helpMenu.displayMenu();
+                break;
+            case 3:
+                System.out.println("You have gone off the menu correctly! 👋");
                 break;
             default:
                 System.out.println("⚠ Choose a valid option ⚠");
