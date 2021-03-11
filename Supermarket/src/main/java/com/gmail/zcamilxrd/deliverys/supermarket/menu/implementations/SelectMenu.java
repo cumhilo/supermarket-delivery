@@ -9,7 +9,7 @@ public class SelectMenu implements IMenu {
     public void start() {
         IMenu helpMenu = new HelpMenu();
         IMenu invoiceMenu = new InvoiceMenu();
-        
+
         Arrays.asList(
                 "",
                 "-x-*      Menu      *-x-",
