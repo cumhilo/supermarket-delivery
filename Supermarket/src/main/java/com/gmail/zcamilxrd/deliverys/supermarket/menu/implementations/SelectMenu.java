@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class SelectMenu implements IMenu {
-    IMenu helpMenu = new HelpMenu();
-    IMenu invoiceMenu = new InvoiceMenu();
+    HelpMenu helpMenu = new HelpMenu();
+    InvoiceMenu invoiceMenu = new InvoiceMenu();
 
     public void start() {
         Arrays.asList(
