@@ -1,0 +1,2 @@
+# Supermarket-Delivery
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7f370b5f11b4b0dba1817c1908cb5fe)](https://app.codacy.com/gh/vCamilx/Supermarket-Delivery?utm_source=github.com&utm_medium=referral&utm_content=vCamilx/Supermarket-Delivery&utm_campaign=Badge_Grade_Settings)
