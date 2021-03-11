@@ -28,8 +28,6 @@ public class HelpMenu implements IMenu {
         if (closeMenu) {
             selectMenu.displayMenu();
         }
-
-        return;
     }
 
     public void displayMenu() {
