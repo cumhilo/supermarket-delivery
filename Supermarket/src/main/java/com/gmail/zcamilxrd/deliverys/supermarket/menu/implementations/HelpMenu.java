@@ -1,13 +1,13 @@
 package com.gmail.zcamilxrd.deliverys.supermarket.menu.implementations;
 
 import com.gmail.zcamilxrd.deliverys.supermarket.menu.IMenu;
+import com.gmail.zcamilxrd.deliverys.supermarket.utils.ConsoleUtil;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class HelpMenu implements IMenu {
     public void start() {
-        Scanner scanner = new Scanner(System.in);
+
         IMenu selectMenu = new SelectMenu();
 
         Arrays.asList(
@@ -24,7 +24,7 @@ public class HelpMenu implements IMenu {
 
         Arrays.asList("", "Do you want to return to the main menu?", "").forEach(System.out::println);
 
-        boolean closeMenu = scanner.nextBoolean();
+        boolean closeMenu = Boolean.parseBoolean(ConsoleUtil.scanner.nextLine());
         if (closeMenu) {
             selectMenu.displayMenu();
         }

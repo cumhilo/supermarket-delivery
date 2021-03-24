@@ -1,6 +1,7 @@
 package com.gmail.zcamilxrd.deliverys.supermarket.menu.implementations;
 
 import com.gmail.zcamilxrd.deliverys.supermarket.menu.IMenu;
+import com.gmail.zcamilxrd.deliverys.supermarket.utils.ConsoleUtil;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -23,8 +24,7 @@ public class SelectMenu implements IMenu {
                 ""
         ).forEach(System.out::println);
 
-        Scanner scanner = new Scanner(System.in);
-        byte option = scanner.nextByte();
+        byte option = Byte.parseByte(ConsoleUtil.scanner.nextLine());
 
         switch (option) {
             case 1:

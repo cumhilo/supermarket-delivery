@@ -2,6 +2,7 @@ package com.gmail.zcamilxrd.deliverys.supermarket.menu.implementations;
 
 import com.gmail.zcamilxrd.deliverys.supermarket.entity.SupermarketEntity;
 import com.gmail.zcamilxrd.deliverys.supermarket.menu.IMenu;
+import com.gmail.zcamilxrd.deliverys.supermarket.utils.ConsoleUtil;
 import com.gmail.zcamilxrd.deliverys.supermarket.utils.IMultiply;
 
 import java.util.ArrayList;
@@ -14,18 +15,17 @@ public class InvoiceMenu implements IMenu {
     public List<SupermarketEntity> supermarketEntities = new ArrayList<>();
 
     public void start() {
-        Scanner scanner = new Scanner(System.in);
         IMenu selectMenu = new SelectMenu();
         IMultiply multiply = (number1, number2) -> (number1 * number2);
 
         System.out.println("Please provide the seller name:");
-        String seller = scanner.nextLine();
+        String seller = ConsoleUtil.scanner.nextLine();
         System.out.println("Please provide the product name:");
-        String product = scanner.nextLine();
+        String product = ConsoleUtil.scanner.nextLine();
         System.out.println("Please provide the product price:");
-        int price = scanner.nextInt();
+        int price = ConsoleUtil.scanner.nextInt();
         System.out.println("Please provide the product quantity:");
-        short quantity = scanner.nextShort();
+        short quantity = ConsoleUtil.scanner.nextShort();
 
         SupermarketEntity supermarket = new SupermarketEntity(seller, product, price, quantity);
         supermarketEntities.add(supermarket);
@@ -48,14 +48,16 @@ public class InvoiceMenu implements IMenu {
 
         Arrays.asList("", "Do you want to return to the main menu?", "").forEach(System.out::println);
 
-        boolean closeMenu = scanner.nextBoolean();
+        boolean closeMenu = ConsoleUtil.scanner.nextBoolean();
+
         if (closeMenu) {
             selectMenu.displayMenu();
         }
 
         Arrays.asList("", "Do you want to receive an invoice?", "").forEach(System.out::println);
 
-        boolean receiveInvoice = scanner.nextBoolean();
+        boolean receiveInvoice = ConsoleUtil.scanner.nextBoolean();
+
         if (receiveInvoice) {
             for (SupermarketEntity supermarketPrintln : supermarketEntities) {
                 Arrays.asList(
@@ -71,9 +73,7 @@ public class InvoiceMenu implements IMenu {
                         "").forEach(System.out::println);
             }
             System.out.println("Total value: " + setPrice);
-            return;
         }
-        this.displayMenu();
     }
 
     public void displayMenu() {
