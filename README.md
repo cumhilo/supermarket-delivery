@@ -25,6 +25,9 @@ purchased and/or the total value of your purchases.
 In addition, we have tried to use the functions previously learned in the old devcamp classes such as code optimization
 or object creation.
 
+<h4>Update 21/07/2021</h4>
+<p>I am currently working on a recoding of this project, because I am learning swing, also now I can program better so I think I can improve the code</p>
+
 <h4>Badges</h4>
 
 [![languages](https://img.shields.io/static/v1?label=languages&message=java&color=informational)](https://www.oracle.com/java/)
@@ -32,4 +35,4 @@ or object creation.
 [![visitors](https://img.shields.io/github/watchers/vcamilx/supermarket-delivery?style=social)](https://vcamilx.github.io/)
 [![stars](https://img.shields.io/github/stars/vcamilx/supermarket-delivery?style=social)](https://vcamilx.github.io/)
 
-<h3><i>Project created by vCamilo ✨ | 2021 Akardoo DevCamp<i/><h3> 
+<h4><i>Project created by vCamilo ✨ | 2021 Akardoo DevCamp<i/><h4> 
